@@ -1,0 +1,6 @@
+README.md
+setup.py
+Wine_Quality_ML_Project.egg-info/PKG-INFO
+Wine_Quality_ML_Project.egg-info/SOURCES.txt
+Wine_Quality_ML_Project.egg-info/dependency_links.txt
+Wine_Quality_ML_Project.egg-info/top_level.txt
