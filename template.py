@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format= '[%(asctime)s]: %(message)s:')
 
-project_name = "text_summarization"
+project_name = "Wine_Quality_ML"
 
 Files_list = [
     ".github/workflows/.gitkeep",
@@ -25,7 +25,8 @@ Files_list = [
     "README.md",
     "requirements.txt",
     "setup.py",
-    "research/trails.ipynb"
+    "research/trails.ipynb",
+    ".gitignore"
 ]
 
 for filepath in Files_list:
