@@ -12,5 +12,5 @@
 8. Update main.py
 9. Update app.py
 
-**Repeating the 2 to 8 steps at every stage**
-**At last create app.py file**
+#### **Repeating the 2 to 8 steps at every stage**
+#### **At last create app.py file**
