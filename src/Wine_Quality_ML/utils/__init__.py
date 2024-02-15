@@ -82,6 +82,14 @@ def load_object(file_path):
 
 # To save json file
 @ensure_annotations
-def save_json(obj, file_path):
-    with open(file_path, "wb") as file_obj:
-        json.dump(obj, file_obj, indent=4)
+def save_json(path: Path, data: dict):
+    """save json data
+
+    Args:
+        path (Path): path to json file
+        data (dict): data to be saved in json file
+    """
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4)
+
+    logging.info(f"json file saved at: {path}")
