@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import os 
 import numpy as np
 import pandas as pd
-from Wine_Quality_ML.pipeline.prediction import PredictionPipeline
+from src.Wine_Quality_ML.pipeline.prediction import PredictionPipeline
 
 
 app = Flask(__name__) # initializing a flask app
@@ -26,6 +26,7 @@ def training():
 def index():
     if request.method == 'POST':
         try:
+            i = []
             #  reading the inputs given by the user
             fixed_acidity =float(request.form['fixed_acidity'])
             volatile_acidity =float(request.form['volatile_acidity'])
@@ -46,7 +47,14 @@ def index():
             obj = PredictionPipeline()
             predict = obj.predict(data)
 
-            return render_template('results.html', prediction = str(predict))
+            if i in predict<5:
+                i = "Bad Quality Wine"
+            elif predict<7:
+                i = "Medium Quality Wine"
+            else:
+                i = "Good Quality Wine"
+            
+            return render_template('results.html', prediction = str(predict), quality = str(i))
 
         except Exception as e:
             print('The Exception message is: ',e)
