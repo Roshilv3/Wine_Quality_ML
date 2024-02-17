@@ -33,8 +33,8 @@ class ModelEvaluation:
         (rmse, mae, r2) = self.metrics_eval(test_y, predicted_qualities)
         
         # Saving metrics as local
-        scores = {"Root Mean Squared Error": rmse, 
-                  "Mean Absoulte Error": mae, 
-                  "r2_score": r2
+        scores = {"Root Mean Squared Error"  : rmse, 
+                  "Mean Absoulte Error"      : mae, 
+                  "r2_score"                 : r2
                   }
         save_json(path= Path(self.config.metrics_file_path), data=scores)

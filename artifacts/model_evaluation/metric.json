@@ -1,5 +1,5 @@
 {
-    "Root Mean Squared Error": 0.6815953837475259,
-    "Mean Absoulte Error": 0.5526613576286267,
-    "r2_score": 0.23810118426393834
+    "Root Mean Squared Error": 0.7006226596969968,
+    "Mean Absoulte Error": 0.5493993168150404,
+    "r2_score": 0.33296215039063215
 }
